@@ -5,21 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic World</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/6ed99c094a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
+    <header id="home">
+        <!-- navbar starts here -->        
+        <nav class="container">
             <div class="logo">
                 <img src="images/logo.png" alt="">
             </div>
+            <input  type="checkbox"  id="nav-toggler">
+            <label class="nav-toggler-icon" for="nav-toggler">
+                <i class="fas fa-bars"></i>
+            </label>            
             <ul class="navigatiton">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!-- navbar ends here --> 
+        <section class="container">
+            <div class="banner">
+                <div class="banner-left">
+                    <h1>Cartoons and animation series strem anytime on <span class="highlight" >cosmic world</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur soluta quae vel eveniet est voluptatum explicabo odit sed odio, impedit reprehenderit eum ipsa magni. Reprehenderit necessitatibus hic amet nostrum labore!</p>
+                    <button class="primary-button" type="submit">Browse Now</button>
+                </div>
+                <div class="banner-right">
+                    <img src="/images/about.png" alt="">
+                </div>
+            </div>
+        </section>       
     </header>
+    <main>
+        <!-- Feature starts here -->
+        <section id="feature">
+            <div class="section-title">
+                <h2>
+                    Fea<span class="highlight">t</span>ures
+                </h2>
+            </div>
+            <div class="feature-cards">
+                <div class="card">
+                    <i class="fas fa-book card-icon"></i>
+                    <h3>Creative Story</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim quae minus recusandae ullam, sit sequi. Quaerat qui, eligendi provident, laboriosam ex incidunt nemo voluptas, eveniet debitis illum dicta? Fugit!</p>
+                    <a href="">Read More</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-video card-icon"></i>
+                    <h3>4K Support</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim quae minus recusandae ullam, sit sequi. Quaerat qui, eligendi provident, laboriosam ex incidunt nemo voluptas, eveniet debitis illum dicta? Fugit!</p>
+                    <a href="">Read More</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-star card-icon"></i>
+                    <h3>Super Quality</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim quae minus recusandae ullam, sit sequi. Quaerat qui, eligendi provident, laboriosam ex incidunt nemo voluptas, eveniet debitis illum dicta? Fugit!</p>
+                    <a href="">Read More</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-lock card-icon"></i>
+                    <h3>Highly Secured</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim quae minus recusandae ullam, sit sequi. Quaerat qui, eligendi provident, laboriosam ex incidunt nemo voluptas, eveniet debitis illum dicta? Fugit!</p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </section>
+        <!-- Feature ends here -->
+        <!-- Gallery starts here -->
+        <section id="gallery">
+            <div class="section-title">
+                <h2>
+                    Gal<span class="highlight">l</span>ery
+                </h2>
+            </div>
+            <div class="gallery">
+                <div class="photo"><img src="images/godzilla.jpg" alt=""></div>
+                <div class="photo"><img src="images/jumanji.jpg" alt=""></div>
+                <div class="photo"><img src="images/meena.jpg" alt=""></div>
+                <div class="photo"><img src="images/images (4).jpg" alt=""></div>
+                <div class="photo"><img src="images/images (5).jpg" alt=""></div>
+                <div class="photo"><img src="images/tomandjerry.jpg" alt=""></div>
+            </div>
+        </section>
+        <!-- Gallery ends here -->
+        <!-- contact starts here -->
+        <section id="contact">
+            <div class="section-title">
+                <h2>
+                    Con<span class="highlight">t</span>act
+                </h2>
+            </div>
+           <div class="contact">
+            <div class="contact-left">
+                <img src="images/contact.png" alt="">
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" class="text-field" placeholder="Your Name" >
+                    <input type="email" class="text-field" placeholder="Your Email">
+                    <textarea placeholder="Your Message" class="text-field"cols="30" rows="10"></textarea>
+                    <div class="btn">
+                        <button class="primary-button" type="submit">Submit</button>
+                        <button class="primary-button" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+           </div>
+        </section>
+        <!-- contact ends here -->
+    </main>
+    <!-- Footer starts here -->
+    <footer>
+        <div class="foot">
+            <p>Copyright &copy; all right reserved by Cosmic World</p>
+            <small>Developer | <span class="highlight">Shubrato Kumar</span>
+            </small>
+        </div>
+    </footer>
+    <!-- Footer ends here -->
 </body>
 </html>
